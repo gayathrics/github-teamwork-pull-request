@@ -1,5 +1,5 @@
 {
-  "name": "github-teamwork-pr-sync",
+  "name": "github-teamwork-pull-request",
   "version": "1.0.0",
   "description": "Using Teamwork API v3 move project task to appropriate board columns",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gayathrics/github-teamwork-pr-sync.git"
+    "url": "git+https://github.com/gayathrics/github-teamwork-pull-request.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gayathrics/github-teamwork-pr-sync/issues"
+    "url": "https://github.com/gayathrics/github-teamwork-pull-request/issues"
   },
-  "homepage": "https://github.com/gayathrics/github-teamwork-pr-sync#readme",
+  "homepage": "https://github.com/gayathrics/github-teamwork-pull-request#readme",
   "dependencies": {
     "@actions/core": "^1.10.0",
     "@actions/github": "^5.1.1",

@@ -41,7 +41,7 @@ jobs:
     steps:
       - name: Teamwork sync action step
         id: twsync
-        uses: gayathrics/github-teamwork-pr-sync@v1.1
+        uses: gayathrics/github-teamwork-pull-request@v1.1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TEAMWORK_URI: ${{ secrets.TEAMWORK_URI }}
