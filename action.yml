@@ -1,0 +1,30 @@
+name: 'Sync PR into Teamwork Task'
+description: 'Add a comment in task, add tags and change board column'
+inputs:
+  GITHUB_TOKEN:
+    description: 'Github Token'
+    required: true
+  TEAMWORK_URI: 
+    description: 'Teamwork URI for your organization'
+    required: true
+  TEAMWORK_API_KEY:
+    description: "Teamwork API key"
+    required: true
+  TEAMWORK_PROJECT_ID:
+    description: "Teamwork project id where tasks will be synced"
+    required: true
+  TEAMWORK_OPENED_COLUMN:
+    description: "Task will be moved to this column when a PR is opened"
+    required: true
+  TEAMWORK_CLOSED_COLUMN:
+    description: "Task will be moved to this column when a PR is closed"
+    required: true
+  TEAMWORK_MERGED_COLUMN:
+    description: "Task will be moved to this column when a PR is merged"
+    required: true
+outputs:
+  taskid: # id of output
+    description: 'Success or failure notices'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
